@@ -1,0 +1,27 @@
+Configuration:
+  status: WARN
+  Appenders:
+    Console:
+      name: Console
+      target: SYSTEM_OUT
+      PatternLayout:
+        pattern: "%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"
+
+    File:
+      name: FileAppender
+      fileName: /var/log/edu/${date:yyyy-MM-dd_HH-mm-ss}.log
+      PatternLayout:
+        pattern: "%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"
+      Policies:
+        TimeBasedTriggeringPolicy:
+          interval: 1
+          modulate: true
+      DefaultRolloverStrategy:
+        fileIndex: max
+
+  Loggers:
+    Root:
+      level: info
+      AppenderRef:
+        - ref: Console
+        - ref: FileAppender

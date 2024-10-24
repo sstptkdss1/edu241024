@@ -1,0 +1,5 @@
+[2024-10-23 17:57:30,192] [DEBUG] [FirstprojectApplication.java:16] - debug
+[2024-10-23 17:57:30,193] [INFO ] [FirstprojectApplication.java:17] - info
+[2024-10-23 17:57:30,193] [WARN ] [FirstprojectApplication.java:18] - warn
+[2024-10-23 17:57:30,193] [ERROR] [FirstprojectApplication.java:19] - error
+[2024-10-23 17:57:30,193] [FATAL] [FirstprojectApplication.java:20] - fatal
